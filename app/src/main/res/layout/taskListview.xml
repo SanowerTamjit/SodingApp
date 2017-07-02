@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="1dp"
+        card_view:cardElevation="6dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="0dp"
+            android:background="?android:attr/colorButtonNormal"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.68">
+
+                <TextView
+                    android:id="@+id/viewID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="sans-serif"
+                    android:gravity="top|left"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="PER-123"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="sans" />
+
+                <TextView
+                    android:id="@+id/viewName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/viewID"
+                    android:elevation="1dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="top|left"
+                    android:maxLines="3"
+                    android:paddingLeft="10dp"
+                    android:text="Sanower Abedin Bhuiyan"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:typeface="normal" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-5dp"
+                android:layout_weight="0.32">
+
+                <TextView
+                    android:id="@+id/viewDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="-10dp"
+                    android:elevation="11dp"
+                    android:gravity="top|left"
+                    android:maxLines="3"
+                    android:padding="5dp"
+                    android:text="Updated at 2017-02-02"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="16sp"
+                    android:typeface="sans" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/viewDate"
+                    android:background="@drawable/buttonshape"
+                    android:text="@string/btn_delete"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textColorLink="@android:color/holo_red_dark"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

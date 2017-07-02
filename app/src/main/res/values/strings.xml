@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Soding APP</string>
+    <string name="menu_name">Add Task</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+    <string name="developer">About Developer</string>
+</resources>
