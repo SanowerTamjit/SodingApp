@@ -28,6 +28,7 @@
             android:weightSum="1">
 
             <RelativeLayout
+                android:id="@+id/abcd"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.68">
@@ -70,20 +71,19 @@
             <RelativeLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-5dp"
+
                 android:layout_weight="0.32">
 
                 <TextView
                     android:id="@+id/viewDate"
-                    android:layout_width="match_parent"
+                    android:layout_width="120dp"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_marginTop="-10dp"
+
                     android:elevation="11dp"
                     android:gravity="top|left"
                     android:maxLines="3"
                     android:padding="5dp"
+                    android:layout_alignParentRight="true"
                     android:text="Updated at 2017-02-02"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
@@ -92,14 +92,15 @@
 
                 <Button
                     android:id="@+id/btnDelete"
-                    android:layout_width="match_parent"
+                    android:layout_width="120dp"
                     android:layout_height="25dp"
-                    android:layout_below="@+id/viewDate"
                     android:background="@drawable/buttonshape"
                     android:text="@string/btn_delete"
+                    android:layout_alignParentRight="true"
                     android:textColor="@android:color/holo_red_dark"
                     android:textColorLink="@android:color/holo_red_dark"
-                    android:textSize="17sp" />
+                    android:textSize="17sp"
+                    android:layout_below="@+id/viewDate" />
 
             </RelativeLayout>
 

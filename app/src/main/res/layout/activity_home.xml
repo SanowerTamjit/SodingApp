@@ -10,14 +10,10 @@
         android:id="@+id/recycler_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
         android:scrollbars="vertical"
         card_view:cardCornerRadius="5dp"
         card_view:cardElevation="5dp"
         card_view:cardUseCompatPadding="true"
-        card_view:listitem="@layout/taskListview" />
+        card_view:listitem="@layout/tasklistview" />
 
 </RelativeLayout>

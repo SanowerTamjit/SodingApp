@@ -16,7 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Save"></activity>
+        <activity
+            android:name=".Save"
+            android:parentActivityName=".Home_Activity"
+            android:screenOrientation="portrait"
+            android:label="Save Task">
+        </activity>
+
     </application>
 
 </manifest>

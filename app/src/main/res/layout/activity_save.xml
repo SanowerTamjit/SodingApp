@@ -55,7 +55,7 @@
                     android:editable="false"
                     android:ems="10"
                     android:hint="Date"
-                    android:inputType="textPersonName"
+                    android:inputType="none"
                     android:padding="10dp" />
 
             </LinearLayout>
@@ -92,7 +92,7 @@
                     android:editable="false"
                     android:ems="10"
                     android:hint="ID"
-                    android:inputType="textPersonName"
+                    android:inputType="none"
                     android:padding="10dp" />
 
             </LinearLayout>
@@ -128,6 +128,42 @@
                     android:ems="10"
                     android:hint="Name"
                     android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/descLayoit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/lblDesc"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.31"
+                    android:padding="10dp"
+                    android:text="Description :"
+                    android:textAlignment="textEnd"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/txtDesc"
+                    android:layout_width="129dp"
+                    android:layout_height="86dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.62"
+                    android:background="@drawable/edittextborderrr"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:hint="Description"
                     android:padding="10dp" />
 
             </LinearLayout>
